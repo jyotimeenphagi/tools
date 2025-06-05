@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your one-stop platform for powerful and free online tools including image editing, PDF management, and more." />
+  <title>All-in-One Online Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .tool-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #2563eb;
+    }
+
+    .tool-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .tool-card a {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .tool-card a:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>All-in-One Online Tools</h1>
+    <p>Powerful, free tools for your daily digital needs</p>
+  </header>
+
+  <section class="container">
+    <div class="tool-card">
+      <a href="/img-compress.html" style="text-decoration: none; color: inherit;">
+  <div class="tool-card">
+    <h2>Image Compressor</h2>
+    <p>Reduce image size while maintaining quality for faster loading.</p>
+    <span class="btn">Try Now</span>
+  </div>
+</a>
+
+
+    <div class="tool-card">
+      <h2>Image Converter</h2>
+      <p>Convert images between JPG, PNG, WebP, and more formats.</p>
+      <a href="/image-converter">Try Now</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>PDF Merger</h2>
+      <p>Combine multiple PDFs into a single document effortlessly.</p>
+      <a href="/pdf-merger">Try Now</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>PDF to Image</h2>
+      <p>Convert PDF pages into high-quality images quickly.</p>
+      <a href="/pdf-to-image">Try Now</a>
+    </div>
+
+    <div class="tool-card">
+      <h2>More Tools Coming!</h2>
+      <p>Stay tuned for upcoming utilities to boost your productivity.</p>
+      <a href="#">Notify Me</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> YourTools. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
