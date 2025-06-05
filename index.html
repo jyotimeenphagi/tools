@@ -102,12 +102,25 @@
 
   <section class="container">
     <div class="tool-card">
-      <a href="/Tool/img-compress.html" style="text-decoration: none; color: inherit;">
-  <div class="tool-card">
-    <h2>Image Compressor</h2>
-    <p>Reduce image size while maintaining quality for faster loading.</p>
-    <span class="btn">Try Now</span>
-  </div>
+      .tool-card {
+  /* existing styles */
+  cursor: pointer;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
 </a>
 
 
